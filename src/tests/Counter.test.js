@@ -37,5 +37,5 @@ test('clicking - decrements the count', () => {
   const count = screen.getByTestId("count");
   const decrement = screen.getByText("-");
   fireEvent.click(decrement);
-  expect(count).toHaveTextContent("1");
+  expect(count).toHaveTextContent("-1");
 });
